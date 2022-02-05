@@ -1,5 +1,8 @@
 image: ubuntu:20.04
 
+variables:
+  TARGET_DISTRO: focal
+
 build:
   stage: build
   script:

@@ -1,3 +1,4 @@
 gram:
     DoubleTapToWake:
-        - /sys/class/input/event1/device/device/fts_gesture_mode|1|0
+        - /sys/touchpanel/double_tap|1|0
+        

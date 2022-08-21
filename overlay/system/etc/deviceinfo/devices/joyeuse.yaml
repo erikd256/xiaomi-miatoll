@@ -14,3 +14,5 @@ joyeuse:
         - false
     MirAndroidPlatformServerPartialUpdates:
         - true
+    LomiriInteractiveBlur:
+        - true

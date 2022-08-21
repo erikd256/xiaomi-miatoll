@@ -14,3 +14,5 @@ curtana:
         - false
     MirAndroidPlatformServerPartialUpdates:
         - true
+    LomiriInteractiveBlur:
+        - true

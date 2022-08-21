@@ -1,5 +1,6 @@
 pre-start script
   /usr/bin/droid/bluebinder_wait.sh
   sleep 2
-echo ON > /dev/wlan
+  echo ON > /dev/wlan
+  /usr/sbin/nfcd
 end script

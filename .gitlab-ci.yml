@@ -1,8 +1,6 @@
-timeout: 2 hours
-
 variables:
   ADAPTATION_TOOLS_BRANCH: halium-10-focal-catchup
   BUILD_DEVEL_FLASHABLE_FOCAL: 1
 
 include:
-  - https://gitlab.com/ubports/porting/community-ports/halium-generic-adaptation-build-tools/-/raw/halium-10-focal-catchup/gsi-port-ci.yml
+  - https://gitlab.com/nitanmarcel/halium-generic-adaptation-build-tools/-/raw/halium-10-focal-catchup/gsi-port-ci.yml

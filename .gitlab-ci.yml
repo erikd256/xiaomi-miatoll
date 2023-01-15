@@ -1,5 +1,5 @@
 variables:
-  ADAPTATION_TOOLS_BRANCH: halium-10
+  ADAPTATION_TOOLS_BRANCH: halium-10-focal-catchup
   BUILD_DEVEL_FLASHABLE_FOCAL: 1
 
 include:

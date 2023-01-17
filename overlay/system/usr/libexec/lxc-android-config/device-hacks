@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Wait for the property system to be up.
+while [ ! -e /dev/socket/property_service ]; do sleep 0.1; done
+
+# Enable WIFI
+while [ ! -e /dev/wlan ]; do sleep 0.2; done
+echo 1 > /dev/ipa && echo ON /dev/wlan
+
+# fix torch
+ERR="flashv2: qpnp_flash_led_brightness_set: Failed to get flash driver data"
+echo 0 > /sys/class/leds/flashlight/brightness
+if dmesg |  grep -q "$ERR"; then
+    mount -o bind /sys/class/leds/led:torch_0/ /sys/class/leds/flashlight
+fi

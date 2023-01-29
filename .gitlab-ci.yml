@@ -1,7 +1,7 @@
 timeout: 2 hours
 
 variables:
-  ADAPTATION_TOOLS_BRANCH: halium-10-focal-catchup
+  ADAPTATION_TOOLS_BRANCH: halium-10
   BUILD_DEVEL_FLASHABLE_FOCAL: 1
 
 include:
